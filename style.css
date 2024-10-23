@@ -5,3 +5,23 @@
   margin: 0;
   padding: 0;
 }
+
+body{
+  display: grid;
+  grid-template-columns: clamp(200px,25%,300px) 3fr;
+  height: 100vh;
+}
+
+.dashboard{
+  background-color: rgb(24,146,211);
+}
+
+main{
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+
+.content{
+  background-color: rgb(225,232,240);
+}
