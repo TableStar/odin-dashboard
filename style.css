@@ -18,7 +18,6 @@ a {
 body {
   display: grid;
   grid-template-columns: clamp(250px, 25%, 300px) 3fr;
-  height: 100vh;
 }
 
 .dashboard {
@@ -26,16 +25,22 @@ body {
   display: grid;
   grid-template-rows: 1fr 7fr;
   row-gap: 40px;
+  position: fixed;
+  width: clamp(250px, 25%, 300px);
+  height: 100dvh;
 }
 
 main {
   display: grid;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: auto 1fr;
   padding-top: 8px;
 }
 
 .content {
   background-color: rgb(225, 232, 240);
+  padding: 16px 32px 16px 32px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 .branding {
@@ -95,6 +100,7 @@ main {
   display: grid;
   grid-template-rows: 1fr 2fr;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
 
 .navbar {
   display: grid;
@@ -186,4 +192,49 @@ main {
 
 .profile-buttons > button:hover {
   cursor: pointer;
+}
+
+.projects > p {
+  font-size: large;
+  font-weight: 600;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 16px;
+  gap: 32px 32px;
+  padding: 8px 16px 8px 16px;
+}
+
+.project-card {
+  background-color: white;
+  border-left: 8px solid violet;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  min-height: 100px;
+  font-size: small;
+  padding: 16px 24px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.card-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 20px;
+}
+
+.card-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.content-side{
+  
 }
