@@ -94,7 +94,7 @@ main {
 .header {
   display: grid;
   grid-template-rows: 1fr 2fr;
-}
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 
 .navbar {
   display: grid;
@@ -111,6 +111,7 @@ main {
 .navbar-icon {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .search-input {
   border-width: 0px;
@@ -186,4 +187,3 @@ main {
 .profile-buttons > button:hover {
   cursor: pointer;
 }
-
