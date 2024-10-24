@@ -41,6 +41,7 @@ main {
   padding: 16px 32px 16px 32px;
   display: grid;
   grid-template-columns: 3fr 1fr;
+  column-gap: 16px;
 }
 
 .branding {
@@ -236,5 +237,43 @@ main {
 }
 
 .content-side{
-  
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 16px;
+}
+
+.content-side h3 {
+  font-weight: 500;
+}
+
+.announcement-card, .trending-card{
+  background-color: white;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
+  margin-top: 12px;
+  font-size:12px;
+  width:250px;
+  row-gap: 12px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+}
+
+.announcements {
+  padding-bottom: 16px;
+}
+
+.announcements:not(:last-child){
+  border-bottom: 1px solid lightgray;
+}
+
+.announcement-card h3,.trending-card h3 {
+  font-weight: 700;
+}
+.announcement-card p,.trending-card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
