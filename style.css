@@ -277,3 +277,27 @@ main {
   -webkit-box-orient: vertical;  
   overflow: hidden;
 }
+.trending-card {
+  row-gap: 24px;
+}
+
+.trendings {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.trendings-words >p:first-child{
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.trendings-words >p:last-child{
+  opacity: 0.8;
+}
+
+.trendings-pic {
+  height: 36px;
+  width: 36px;
+  object-fit: cover;
+  border-radius: 999px;
+}
